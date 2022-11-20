@@ -1,0 +1,2 @@
+select t1.PRODUCT_ID ,t1.NAME ,min(t2.PRICE ) as MIN_PRICE ,max(t2.PRICE ) as MAX_PRICE from PRODUCT as t1 inner join  PRODUCT_PRICE as t2
+on t1.PRODUCT_ID= t2.PRODUCT_ID group by t1.PRODUCT_ID,t1.NAME
